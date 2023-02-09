@@ -79,7 +79,10 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-const port = process.env.PORT || 3000
+const port = 3000
 
-app.listen(port, () => console.log('listening on port ' + port))
+
+app.listen(port, () => {
+  console.log(`running on ${port}`)
+})
 module.exports = app;
